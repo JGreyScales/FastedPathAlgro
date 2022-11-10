@@ -61,6 +61,9 @@ def waveCollapse(path, allRoutes : list, depth, goal):
         return (depth, path)
 
     currentPosition = allRoutes[0].index(path[-1:][0])
+    
+
+    # this is a huge mess, the pathroads and bus's can be simplified into one expression. I wrote at 1am and am too tired to do so.
 
     try:
         if currentPosition != 0:
@@ -88,13 +91,6 @@ def waveCollapse(path, allRoutes : list, depth, goal):
             possibleRoutes.remove(route)
         except (ValueError):
             pass
-    # remove all routes that will cause a double back
-
-    # more state checking
-
-    # return cycle
-
-    # output
 
 
     acceptedAnswers = []
