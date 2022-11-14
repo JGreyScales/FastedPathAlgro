@@ -66,8 +66,6 @@ def waveCollapse(path, allRoutes : list, depth, goal):
     currentPosition = allRoutes[0].index(path[-1:][0])
     
 
-    # this is a huge mess, the pathroad's and bus's can be simplified into one expression. I wrote at 1am and am too tired to do so.
-
     try:
         if currentPosition != 0:
             possibleRoutes.append( (("", allRoutes[0][currentPosition - 1]), 1) )
