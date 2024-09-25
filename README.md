@@ -11,4 +11,4 @@ station amount is a random interger between 4 and 12
 #amount of busPaths = footpaths - 1 if the amount of terminals is not divisible by 3
 #otherwise busPaths = footpaths
 
-#movement directyl to the left letter is always allowed, costing 1 hour
+#movement directly to the left letter is always allowed, costing 1 hour
